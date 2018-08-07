@@ -19,5 +19,5 @@ Personal skills and services
 Projects I have worked on
 ```
 ```
-Blog, with up to date IT information
+Blog with up to date IT information
 ```
