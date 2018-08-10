@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
     font-size: 1.25rem;
     background: white;
     text-align: center;
@@ -12,10 +12,17 @@ header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: rgb(231, 231, 231);
+    text-shadow: 2px 2px 4px rgb(138, 138, 138);
 }
 
-h1 {
+a {
+    color: inherit;
+}
+
+h1 a {
     font-size: 4rem;
+    text-decoration: none;
+    color: black;
 }
 
 nav a {
@@ -23,10 +30,12 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1.25rem 1rem 1.25rem 1rem;
+    text-shadow: 2px 2px 4px rgb(160, 160, 160);
 }
 
 nav a:hover {
     color:rgb(231, 231, 231);
+    text-shadow: 2px 2px 6px rgb(255, 255, 255);
 }
 
 nav {
@@ -49,12 +58,12 @@ img {
     position: relative;
     display: block;
     margin: 0 auto;
-    box-shadow: 3px 5px 8px 1px black;
-    
+    filter: grayscale(1);
 }
 
 footer {
     font-size: 1rem;
-    color: rgb(175, 175, 175);
+    color: black;
+    background: rgb(231, 231, 231);
     padding-bottom: 1.5rem;
 }
