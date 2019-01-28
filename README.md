@@ -2,6 +2,8 @@
 
 This project uses GitHub pages to host my personal website
 
+https://johnzeroone.github.io/
+
 ## Currently under construction
 
 Projects & Blog entries
