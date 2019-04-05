@@ -1,0 +1,10 @@
+Freeing linked lists
+
+node *cursor = head;
+
+while (cursor != NULL)
+{
+    node *temp = cursor;
+    cursor = cursor->next;
+    free(temp);
+}

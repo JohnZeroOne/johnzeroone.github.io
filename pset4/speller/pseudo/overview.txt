@@ -1,0 +1,8 @@
+load
+    loads the dictionary
+check
+    checks if the given word is in the dictionary
+size
+    returns the number of given words that were found in the dictionary
+unload
+    frees the dictionary from memory

@@ -1,0 +1,63 @@
+load, create a dictionary data structure
+for each word found, store in dictionary data struct
+    hash table
+        an array of buckets
+            each bucket is a linked list
+                each linked list is an array of nodes
+                    node contains a value & pointer to next node (next and prev. for doubly linked lists)
+                    last node points to NULL to indicate end of ll
+        hash function
+            return the bucket that a given key belongs to (example given of sorting odd/even to divide a problem in half)
+
+making a hash table with
+linked lists
+
+typedef struct node
+{
+    char word[LENGTH + 1];
+    struct node *next;
+}
+node;
+
+node *hashtable[50];
+
+node *node1 = malloc(sizeof(node));
+node *node2 = malloc(sizeof(node));
+strcopy(node1->word, "hello");
+strcopy(node2->word, "world");
+node1->next = node2;
+
+adding a word
+
+scan dictionary word by word
+while (fscanf(file, "%s", word) != EOF)
+{
+
+}
+
+node *new_node = malloc(sizeof(node));
+if (new_node == NULL)
+{
+    unload();
+    return false;
+}
+
+copy new word
+strcopy(new_node->word, word);
+
+new_node->next = head;
+head = new_node;
+
+hash function
+takes a string
+returns an index
+    index < number of buckets
+deterministic
+    the same value must map to the same bucket each time
+
+hash the word
+new_node->word has the word from the dictionary
+hashing new_word will give us the index of a bucket in the hash table
+insert into the linked list
+
+each element of an array is a node * (pointer)

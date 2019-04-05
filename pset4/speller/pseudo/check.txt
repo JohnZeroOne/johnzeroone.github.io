@@ -1,0 +1,15 @@
+case insensitive
+assumes alphabetical characters or apostrophe
+
+if the word exists it can be found in the hash table
+    which bucket would the word be in?
+        hashtable[hash(word)]
+    search in the linked list
+        strcasecmp
+
+node *cursor = head;
+while (!cursor)
+{
+    // do something
+    cursor = cursor->next;
+}
